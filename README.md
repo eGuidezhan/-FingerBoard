@@ -1,15 +1,13 @@
-给键盘添加指纹识别功能的使用说明
-
-在你的机械键盘中添加指纹识别功能可以大大增强安全性和个性化，详细项目介绍请看这篇文章:
-
-Adding Fingerprint Recognition to Your Keyboard with Arduino
-
-使用方法
-
-在串口助手中选择Arduino的串口号，将波特率设置为 115200。
-
-要注册一个手指，发送以下命令到串口：A,3，这个命令会将手指注册为 3号。根据串口助手的提示，将手指放在传感器上，待系统响应“OK”确认注册成功。
-
-要删除手指的话直接使用新的ID（如 4）重新注册手指，会覆盖原有的指纹数据。
-
-你可以修改 CmdCheck 函数，以添加或调整自定义指令。
+<body>
+<h1>User Instructions for Adding Fingerprint Recognition to Your Keyboard
+</h1>
+<p>Enhancing your mechanical keyboard with fingerprint recognition can significantly boost security and personalization. Here's a detailed guide on how to do it:</p>
+<p><a href="https://www.tech-sparks.com/adding-fingerprint-recognition-to-keyboard-with-arduino/">Adding Fingerprint Recognition to Your Keyboard with Arduino</a></p>
+<p><strong>Usage Instructions</strong></p>
+<ol>
+  <li>In the Serial Monitor, select the Arduino's serial port and set the baud rate to 115200.</li>
+  <li>To register a fingerprint, send the following command to the serial port: A,3. This command will register the fingerprint as ID 3. Follow the prompts in the Serial Monitor to place your finger on the sensor. Wait for the system to respond with &quot;OK&quot; to confirm successful registration.</li>
+  <li>To delete a fingerprint, simply use a new ID (e.g., 4) to re-register the fingerprint, which will overwrite the existing fingerprint data.</li>
+  <li>You can modify the CmdCheck function to add or adjust custom commands.</li>
+</ol>
+</body>
